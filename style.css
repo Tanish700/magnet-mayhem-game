@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        radial-gradient(circle at top, #18275a, #050816 65%);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.screen {
+    padding: 100px 20px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #00eaff;
+    border-radius: 30px;
+    color: #00eaff;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 58px;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff, 0 0 40px #0066ff;
+    letter-spacing: 4px;
+}
+
+h2 {
+    color: #ff4dff;
+    margin: 18px;
+}
+
+p {
+    margin: 15px;
+    color: #c6d5ff;
+    font-size: 17px;
+}
+
+.instructions {
+    margin-top: 25px;
+    padding: 15px;
+    display: inline-block;
+    background: rgba(18, 35, 75, 0.7);
+    border: 1px solid #263e76;
+    border-radius: 15px;
+}
+
+button {
+    background: linear-gradient(90deg, #00eaff, #7b5cff);
+    color: #050816;
+    border: none;
+    padding: 16px 38px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 0 0 25px #00bfff;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 35px #ff4dff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#gameScreen {
+    padding: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    color: #00eaff;
+    font-size: 27px;
+}
+
+.stats {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+.stats b {
+    color: #00eaff;
+}
+
+.powerBar {
+    margin: 12px;
+    color: #c6d5ff;
+    font-size: 15px;
+}
+
+#modeText {
+    color: #00eaff;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    background: #080d27;
+    border: 2px solid #00eaff;
+    border-radius: 14px;
+    box-shadow: 0 0 30px #0066ff;
+}
+
+.hint {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .stats {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
